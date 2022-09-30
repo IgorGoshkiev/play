@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: var(--common-color-black);
+  background-color: var(--common-color-white);
+}
+
+:root {
+  --common-color-white: #ffffff;
+  --common-color-black: #000000;
+  --common-color-light-black: #333333;
+  --comon-color-blue: #0000FF;
+  --comon-color-red: #FF0000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+b {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header-title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 38px;
+  color: var(--common-color-light-black);
+}
+
+.header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.header-wraper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-clock {
+  font-size: 18px;
+  color: var(--comon-color-red);
+  border: 1px solid  var(--common-color-black);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main {
+  margin-bottom: 40px;
+}
+
+.header-text {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 24px;
+  color: #999999;
+  text-align: justify;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px 33px;
+
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: bold;
+  font-size: 23.4581px;
+  line-height: 29px;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.btn-start-play {
+  color: var(--comon-color-blue);
+  border: 1px solid var(--comon-color-blue);
+}
+
+.btn-start-play:hover {
+  transform: scale(0.9);
+}
+
+.btn-start-play:focus-visible {
+  transform: scale(0.9);
+}
+
+.btn-start-play:active {
+  background-color: #0000FF;
+  color: white;
+}
+
+.button-disable {
+  opacity: .3;
+}
+
+.btn-stop-play {
+  color: var(--comon-color-red);
+  border: 1px solid var(--comon-color-red);
+}
+
+.btn-stop-play:hover {
+  transform: scale(0.9);
+}
+
+.btn-stop-play:focus {
+  transform: scale(0.9);
+}
+
+.btn-stop-play:active {
+  background-color: var(--comon-color-red);
+  color: white;
+}
+
+.app-form__input {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 18px;
+  padding-bottom: 10px;
+  width: 400px;
+}
+
+.app-form__input-error::placeholder {
+  font-size: 25px;
+  color: var(--comon-color-red);
+}
+
+.app-form {
+  margin-bottom: 20px;
+  border: var(--common-color-black) 1px solid;
+  padding: 20px;
+}
+
+.field-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button-for-card {
+  flex: 0 1 14%;
+  font-size: 30px;
+  color: var(--comon-color-red);
+  background-image: url(../img/djoker.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 200px;
+  width: 100px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 2px solid var(--common-color-black);
+  cursor: pointer;
+  transition: all .3s linear;
+}
+
+.button-for-card:hover {
+  border: 2px solid var(--comon-color-red);
+}
+
+.button-for-card:focus {
+  border: 2px solid var(--comon-color-red);
+}
+
+.button-for-card__active {
+ background-size: 0;
+ transform: rotate(360deg);
+}
+
+.button-for-card__closed {
+  background-size: cover;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.infoVictory {
+  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px 33px;
+  cursor: none;
+  outline: none;
+  color: var(--comon-color-red);
+  font-size: 24px;
+}
+
+.buttonPlayAgain {
+  color: var(--comon-color-blue);
+  border: 1px solid var(--comon-color-blue);
+}
+
+.buttonPlayAgain:hover {
+  transform: scale(0.9);
+}
+
+.buttonPlayAgain:focus-visible {
+  transform: scale(0.9);
+}
+
+.buttonPlayAgain:active {
+  background-color: #0000FF;
+  color: white;
+}
